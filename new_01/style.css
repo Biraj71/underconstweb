@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #FC466B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+img{
+    display: block;
+  margin-top: 250px;
+  margin-left: 650px;
+    height: 150px;
+    border-radius: 50%;
+}
+.social-icons {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+-ms-flex-pack: center;
+justify-content: center;
+-webkit-box-align: center;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+font-size: 6px;
+cursor: pointer;
+margin-left: -102px;
+}
+.social-icons a{
+    text-decoration: none;
+}
+
+.icon-3d {
+padding: 10px;
+-webkit-animation: icon3d 200ms 10;
+animation: icon3d 200ms 10;
+color: #fff;
+}
+.icon-3d:hover {
+-webkit-animation: icon3d 200ms infinite;
+animation: icon3d 200ms infinite;
+}
+
+@keyframes icon3d {
+0% {
+text-shadow: 5px 4px #f44336, -5px -6px #2196f3;
+}
+25% {
+text-shadow: -5px -6px #f44336, 5px 4px #2196f3;
+}
+50% {
+text-shadow: 5px -4px #f44336, -8px 4px #2196f3;
+}
+75% {
+text-shadow: -8px -4px #f44336, -5px -4px #2196f3;
+}
+100% {
+text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
+}
+}
+
+._0052{
+    margin-left: 625px;
+    font-family: 'Oswald', sans-serif;
+}
+._0053{
+    margin-left: 550px;
+    font-size: 20px;
+}
+
+.alert {
+    padding: 20px;
+    background-color: rgb(37, 170, 223); /* Red */
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
+  }
+
+  @media screen and (max-width: 800px){
+    body{
+        background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-position: center center; 
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    img{
+        margin-top: 183px;
+        margin-left: 138px;
+        height: 261px;
+    }
+    ._0052{
+        margin-left: 92px;
+        font-size: 4.5rem;
+    }
+    ._0053{
+        margin-left: 63px;
+        font-size: 31px;
+    }
+
+    .social-icons{
+        margin-left: -7px;
+        font-size: 10px;
+    }
+    .alert{
+        font-size: 20px;
+    }
+  }
